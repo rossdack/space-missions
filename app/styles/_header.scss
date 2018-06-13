@@ -1,0 +1,81 @@
+.header {
+    background-image: url("../static/space-photo.jpeg");
+    background-repeat: no-repeat;
+    /*background-position-y: 35%;
+    background-size: 100%;*/
+
+    background-position-y: center;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+
+    transition: height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.header--open {
+    @extend .header;
+    height: 24.063em;
+}
+
+.header--hidden {
+    @extend .header;
+    height: 3.125em;
+}
+
+.header-top-text {
+    padding-top: 1.25em;
+    padding-left: 2.5em;
+    color: white;
+    cursor: pointer;
+    flex-shrink: 1;
+    overflow: hidden;
+
+    .text-one {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .text-two {
+        display: inline-block;
+    }
+}
+
+.header-main-text-container {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    flex-grow: 1;
+    overflow: hidden;
+
+    .header-main-text {
+      transform: translateY(50%);
+      top: 25%;
+      position: sticky;
+    }
+}
+
+.header-button {
+    background-image: url("../static/down-chevron.svg");
+    background-repeat: no-repeat;
+
+    height: 1.875em;
+    min-height: 1.875em;
+    max-height: 1.875em;
+    width: 1.875em;
+
+    flex-shrink: 0;
+    flex-grow: 1;
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.250em;
+}
+
+.header-button--open {
+    @extend .header-button;
+    transform: scaleY(-1);
+}

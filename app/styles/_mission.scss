@@ -1,0 +1,71 @@
+@import 'colors';
+
+.mission {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $linedetail;
+    padding-top: 1.250em;
+    padding-bottom: 1.250em;
+
+    .mission-patch-container {
+        width: 4.688em;
+
+        .mission-patch {
+            width: 4.688em;
+            padding-right: 1.250em;
+        }
+    }
+
+    .mission-content {
+        width: 33%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mission-flight-number {
+        text-align: right;
+        .number {
+            text-align: center;
+        }
+        .text {
+            font-size: x-small;
+            color: $infotext;
+        }
+    }
+}
+
+.mission-details {
+    .mission-failed-indicator {
+        color: $failuretext;
+    }
+}
+.mission-name {
+    font-size: smaller;
+    font-weight: 600;
+}
+.mission-location {
+    font-size: smaller;
+    color: $infotext;
+}
+
+.mission-text {
+    text-align: right;
+}
+
+.mission-button-bar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.250em;
+    flex-wrap: wrap;
+
+    .mission-link-item {
+        padding-right: 0.626em;
+        padding-top: 0.313em;
+    }
+
+    .mission-link-item:first-of-type {
+        padding-left: 0px;
+    }
+
+}

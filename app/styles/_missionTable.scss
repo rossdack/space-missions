@@ -1,0 +1,15 @@
+@import 'colors';
+
+.missionTable {
+    background: white;
+    padding-left: 1.250em;
+    padding-right: 1.250em;
+}
+
+.mission-table-count {
+    padding-top: 0.625em;
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+    color: $infotext;
+}

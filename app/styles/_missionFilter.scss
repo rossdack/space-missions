@@ -1,0 +1,45 @@
+@import 'colors';
+
+.mission-filter-outer {
+    border-bottom: 1px solid $linedetail;
+    padding-bottom: 0.313em;
+    background: white;
+}
+
+.mission-filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: white;
+    padding: 1.250em 1.250em 0 1.250em;
+
+    label {
+        display: block;
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+
+    > div {
+        flex-grow: 1;
+        padding-right: 1.250em;
+    }
+    > div:last-of-type {
+        padding-right: 0;
+    }
+
+    input {
+        max-width: 12.500em;
+    }
+
+    .launchpad-select {
+        max-width: 12.500em;
+    }
+}
+
+.filter--error {
+    font-size: smaller;
+    text-align: center;
+    color: $failuretext;
+    background: white;
+    padding-top: 0.313em;
+}
